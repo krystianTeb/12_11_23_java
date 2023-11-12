@@ -3,25 +3,19 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
 
-        /* Zadanie 2 slajd 169
-        Ćwiczenie 2
-        Napisz program który przyjmie trzy dane typu String i łączy je w jeden łańcuch tekstowy i wypisuje go w
-        konsoli.*/
+        int tab[] = {3, 6, 6, 8};
 
-        System.out.println("Podaj pierwszy segment tekstu: ");
-        String tekst1 = scan.next();
+        System.out.println( "Długość tab: " + tab.length ); //zwróci długość tablicy (liczba elementów w tablicy)
+        System.out.println( "Pierwszy element: " + tab[0] ); // Odwołanie do pierwszego elementu tablicy (pod indeks 0 jest wartość 3)
 
-        System.out.println("Podaj pierwszy segment tekstu: ");
-        String tekst2 = scan.next();
+        for(int val: tab){ // pod val zostają podstawiane wszystkie elementy w tablicy.
+            System.out.println(  val );
+        }
 
-        System.out.println("Podaj pierwszy segment tekstu: ");
-        String tekst3 = scan.next();
-
-        System.out.println(tekst1 + tekst2 + tekst3);//1 sposób
-
-
+        for(int i = 0; i < tab.length; i++){
+            System.out.println("Indeks: " + i + " pod tym indeksem jest wartość: " + tab[i]);
+        }
 
     }
 }
