@@ -3,22 +3,30 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int liczbaCalkowita = 5; // 1. Deklaracja zmiennej int o wartości 5
+        Scanner scan = new Scanner(System.in);
 
-        if(liczbaCalkowita % 5 == 0){           // 2. Sprawdza czy w zmiennej liczbaCalkowita mamy liczbę podzielną przez 5
-            System.out.println(liczbaCalkowita); // 2.1. Jeśli liczba podzielna przez 5 to wypisze zawartość zmiennej.
-        }else{                                  // 3. W przeciwnym wypadku jeśli inna zawartość zmiennej.
-            System.out.println(liczbaCalkowita);// 3.2. Wypisuje zawartość zmiennej jeśli niepodzielna przez 5
+        boolean czyWykonywacDalejWhile = true;
+
+        while (czyWykonywacDalejWhile) {
+            System.out.println("Podaj Liczbę 1: ");
+            int liczba = scan.nextInt();
+            System.out.println("Podaj Liczbę 2: ");
+            int liczba2 = scan.nextInt();
+            System.out.println("Podaj operator (+, -, *, /) wpisz x, żeby zakończyć: ");
+            String operator = scan.next();
+
+            switch (operator) {
+                case "+" -> System.out.println("Wynik dodawania: " + liczba + operator + liczba2 + " = " + (liczba + liczba2));
+                case "-" -> System.out.println("Wynik odejmowania: " + liczba + operator + liczba2 + " = " + (liczba - liczba2));
+                case "*" -> System.out.println("Wynik mnożenia: " + liczba + operator + liczba2 + " = " + (liczba * liczba2));
+                case "/" -> System.out.println("Wynik dzielenia: " + liczba + operator + liczba2 + " = " + (liczba / liczba2));
+                case "x" -> {
+                    czyWykonywacDalejWhile = false;
+                    System.out.println("Zakończyłeś wykonywanie programu (wprowadziłeś x).");
+                }
+                default -> System.out.println("Podałeś zły operator, podaj inny.");
+            }
         }
-
-        /*
-         * 1. Deklaracja zmiennej int o wartości 5
-         * 2. Sprawdza czy w zmiennej liczbaCalkowita mamy liczbę podzielną przez 5
-         * 2.1. Jeśli liczba podzielna przez 5 to wypisze zawartość zmiennej.
-         * 3. W przeciwnym wypadku jeśli inna zawartość zmiennej.
-         * 3.2. Wypisuje zawartość zmiennej jeśli niepodzielna przez 5
-         * */
-
 
 
 
