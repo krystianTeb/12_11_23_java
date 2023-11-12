@@ -7,7 +7,7 @@ public class Main {
         int tab[] = new int[100];
 
         for(int i = 0; i < 100; i++){ //Pętla generująca wartości do tablicy
-            tab[i] = i;
+            tab[i] = i+1;
         }
 
         for(int val: tab){ // Pętla wyświetlająca zawartość tab. Pod val zostają podstawiane wszystkie elementy w tablicy.
