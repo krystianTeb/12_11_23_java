@@ -5,28 +5,21 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        boolean czyWykonywacDalejWhile = true;
+        /* Zadanie 2 slajd 169
+        Ćwiczenie 2
+        Napisz program który przyjmie trzy dane typu String i łączy je w jeden łańcuch tekstowy i wypisuje go w
+        konsoli.*/
 
-        while (czyWykonywacDalejWhile) {
-            System.out.println("Podaj Liczbę 1: ");
-            int liczba = scan.nextInt();
-            System.out.println("Podaj Liczbę 2: ");
-            int liczba2 = scan.nextInt();
-            System.out.println("Podaj operator (+, -, *, /) wpisz x, żeby zakończyć: ");
-            String operator = scan.next();
+        System.out.println("Podaj pierwszy segment tekstu: ");
+        String tekst1 = scan.next();
 
-            switch (operator) {
-                case "+" -> System.out.println("Wynik dodawania: " + liczba + operator + liczba2 + " = " + (liczba + liczba2));
-                case "-" -> System.out.println("Wynik odejmowania: " + liczba + operator + liczba2 + " = " + (liczba - liczba2));
-                case "*" -> System.out.println("Wynik mnożenia: " + liczba + operator + liczba2 + " = " + (liczba * liczba2));
-                case "/" -> System.out.println("Wynik dzielenia: " + liczba + operator + liczba2 + " = " + (liczba / liczba2));
-                case "x" -> {
-                    czyWykonywacDalejWhile = false;
-                    System.out.println("Zakończyłeś wykonywanie programu (wprowadziłeś x).");
-                }
-                default -> System.out.println("Podałeś zły operator, podaj inny.");
-            }
-        }
+        System.out.println("Podaj pierwszy segment tekstu: ");
+        String tekst2 = scan.next();
+
+        System.out.println("Podaj pierwszy segment tekstu: ");
+        String tekst3 = scan.next();
+
+        System.out.println(tekst1 + tekst2 + tekst3);//1 sposób
 
 
 
