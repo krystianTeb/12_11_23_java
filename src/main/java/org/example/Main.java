@@ -12,7 +12,7 @@ public class Main {
             //int liczba = scan.nextInt();
 
 
-        for(int i = 0 ; true ; i++) {
+        for(int i = 0 ; i > -10 ; i++) { //należy uważać na warunki, aby nie wygenerować pętli nieskończonej.
 
             System.out.println(i);
         }
