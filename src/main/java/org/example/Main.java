@@ -9,7 +9,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Podaj wartość float: [Zatwierdź ENTEREM]");
-        float liczba = scan.nextFloat(); //2,56  2.56
+        float liczba = scan.nextFloat(); // dobre: 2,56  zła: 2.56 no chyba, że zmienimy ustawienia językowe.
 
         System.out.println("To jest liczba float podana przez Ciebie: " + liczba);
 
