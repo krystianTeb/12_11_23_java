@@ -8,10 +8,17 @@ public class Main {
         //Tworzenie obiektu scan do pobierania danych:
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Podaj wartość float: [Zatwierdź ENTEREM]");
-        float liczba = scan.nextFloat(); // dobre: 2,56  zła: 2.56 no chyba, że zmienimy ustawienia językowe.
+        while(true) {
+            System.out.println("Podaj liczbę do weryfikacji: [Zatwierdź ENTEREM]");
+            int liczba = scan.nextInt();
 
-        System.out.println("To jest liczba float podana przez Ciebie: " + liczba);
+            if (liczba % 2 == 0) {
+                System.out.println("Liczba: " + liczba + " jest parzysta!");
+            } else {
+                System.out.println("Liczba: " + liczba + " nie jest parzysta!");
+            }
+        }
+
 
 
     }
