@@ -8,9 +8,10 @@ public class Main {
         //Tworzenie obiektu scan do pobierania danych:
         Scanner scan = new Scanner(System.in);
 
-       int i = 5;
-       i *= 2; // i = i * 2;
-       System.out.println(i);
+       boolean zm = true;
+
+        zm = Boolean.parseBoolean("0");
+       System.out.println( zm  );
 
 
 
