@@ -12,9 +12,10 @@ public class Main {
             //int liczba = scan.nextInt();
 
 
-        for(int i = 0 ; i > -10 ; i++) { //należy uważać na warunki, aby nie wygenerować pętli nieskończonej.
-
-            System.out.println(i);
+        for( ; true ; ) {
+            System.out.println("Podaj liczbę: [Zatwierdź ENTEREM]");
+            int liczba = scan.nextInt();
+            System.out.println(liczba);
         }
 
 
