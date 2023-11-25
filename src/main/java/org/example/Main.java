@@ -12,9 +12,9 @@ public class Main {
             //int liczba = scan.nextInt();
 
 
-        for( ; true ; ) {
+        for(int i = 0 ; true ; i++) {
 
-            System.out.println("Test");
+            System.out.println(i);
         }
 
 
