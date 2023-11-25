@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -7,12 +8,13 @@ public class Main {
 
         //Tworzenie obiektu scan do pobierania danych:
         Scanner scan = new Scanner(System.in);
+        scan.useLocale(Locale.US);
 
-        System.out.println("Podaj wartość int: [Zatwierdź ENTEREM]");
-        int a = Integer.parseInt(scan.next());//parsowanie typu Integer.parseInt(String "")
-        System.out.println("Podaj wartość int 2: [Zatwierdź ENTEREM]");
-        int b = scan.nextInt();
-        System.out.println("Podana wartość int1: " + a);
-        System.out.println("Podana wartość int2: " + b);
+        System.out.println("Podaj wartość float: [Zatwierdź ENTEREM]");
+        float liczba = scan.nextFloat(); //2,56  2.56
+
+        System.out.println("To jest liczba float podana przez Ciebie: " + liczba);
+
+
     }
 }
