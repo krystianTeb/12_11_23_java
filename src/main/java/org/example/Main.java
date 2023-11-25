@@ -13,9 +13,13 @@ public class Main {
 
 
         for( ; true ; ) {
-            System.out.println("Podaj liczbę: [Zatwierdź ENTEREM]");
-            int liczba = scan.nextInt();
-            System.out.println(liczba);
+            System.out.println("Podaj wartość tekstową 1: [Zatwierdź ENTEREM]");
+            String text1 = scan.nextLine();
+            System.out.println("Podaj wartość tekstową 2: [Zatwierdź ENTEREM]");
+            String text2 = scan.nextLine();
+            System.out.println("Podaj wartość tekstową 3: [Zatwierdź ENTEREM]");
+            String text3 = scan.nextLine();
+            System.out.println(text1 + text2 + text3);
         }
 
 
