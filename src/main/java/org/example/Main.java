@@ -12,17 +12,12 @@ public class Main {
             System.out.println("Podaj liczbę do weryfikacji: [Zatwierdź ENTEREM]");
             int liczba = scan.nextInt();
 
-            if (liczba % 2 == 0) {
-                System.out.println("Liczba: " + liczba + " jest parzysta!");
-            } else {
-                System.out.println("Liczba: " + liczba + " nie jest parzysta!");
-            }
+            System.out.println( liczba % 2 == 0 ? "Liczba: " + liczba + " jest parzysta!" :
+                                                  "Liczba: " + liczba + " nie jest parzysta!" );
 
             System.out.println("Aby kontynuować wpisz T ,jeśli zatrzamać wpisz N!");
             String czyZatrzymac = scan.next();
-            if(czyZatrzymac.equals("N") || czyZatrzymac.equals("n") || czyZatrzymac.equals("nie")) {
-                break;
-            }
+            if(czyZatrzymac.equals("N") || czyZatrzymac.equals("n") || czyZatrzymac.equals("nie")) break;
 
 
         }
