@@ -8,19 +8,25 @@ public class Main {
         //Tworzenie obiektu scan do pobierania danych:
         Scanner scan = new Scanner(System.in);
 
-            //System.out.println("Podaj liczbę do weryfikacji: [Zatwierdź ENTEREM]");
-            //int liczba = scan.nextInt();
+        while (true) {
+            System.out.println("Podaj liczbę 1: [Zatwierdź ENTEREM]");
+            int liczba1 = scan.nextInt();
+            System.out.println("Podaj liczbę 2: [Zatwierdź ENTEREM]");
+            int liczba2 = scan.nextInt();
+            System.out.println("Podaj operator arytmetyczny (+, -, *, /): [Zatwierdź ENTEREM]");
+            String operator = scan.next();
 
-
-        for( ; true ; ) {
-            System.out.println("Podaj wartość tekstową 1: [Zatwierdź ENTEREM]");
-            String text1 = scan.nextLine();
-            System.out.println("Podaj wartość tekstową 2: [Zatwierdź ENTEREM]");
-            String text2 = scan.nextLine();
-            System.out.println("Podaj wartość tekstową 3: [Zatwierdź ENTEREM]");
-            String text3 = scan.nextLine();
-            System.out.println(text1 + text2 + text3);
+            switch (operator) {
+                case "+" -> System.out.println(liczba1 + " + " + liczba2 + " = " + (liczba1 + liczba2));
+                case "-" -> System.out.println(liczba1 + " - " + liczba2 + " = " + (liczba1 - liczba2));
+                case "*" -> System.out.println(liczba1 + " * " + liczba2 + " = " + (liczba1 * liczba2));
+                case "/" -> System.out.println(liczba1 + " : " + liczba2 + " = " + (liczba1 / liczba2));
+                default -> System.out.println("Podałeś operator: " + operator + "Nie rozpoznaje tej operacji.");
+            }
         }
+
+
+
 
 
 
