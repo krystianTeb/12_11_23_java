@@ -5,21 +5,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        //Blok START
+        //Tworzenie obiektu scan do pobierania danych:
         Scanner scan = new Scanner(System.in);
 
-        //Trzy bloki wejścia wyjścia:
-        System.out.println("Podaj a: [Zatwierdź ENTEREM]");
-        int a = scan.nextInt();
-        System.out.println("Podaj b: [Zatwierdź ENTEREM]");
+        System.out.println("Podaj wartość int: [Zatwierdź ENTEREM]");
+        int a = Integer.parseInt(scan.next());//parsowanie typu Integer.parseInt(String "")
+        System.out.println("Podaj wartość int 2: [Zatwierdź ENTEREM]");
         int b = scan.nextInt();
-        System.out.println("Podaj c: [Zatwierdź ENTEREM]");
-        int c = scan.nextInt();
-        //Blok operacji:
-        int suma = a + b + c;
-        //Blok wejścia/wyjścia:
-        System.out.println("Wynik sumy: " + a + " + " + b + " + " + c + " = " + suma );
-        //Blok STOP
-
+        System.out.println("Podana wartość int1: " + a);
+        System.out.println("Podana wartość int2: " + b);
     }
 }
