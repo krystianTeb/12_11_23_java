@@ -17,6 +17,14 @@ public class Main {
             } else {
                 System.out.println("Liczba: " + liczba + " nie jest parzysta!");
             }
+
+            System.out.println("Aby kontynuować wpisz T ,jeśli zatrzamać wpisz N!");
+            String czyZatrzymac = scan.next();
+            if(czyZatrzymac.equals("N") || czyZatrzymac.equals("n") || czyZatrzymac.equals("nie")) {
+                break;
+            }
+
+
         }
 
 
