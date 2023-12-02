@@ -5,14 +5,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int jednaLiczba = 55; //nazewnictwo zmiennej camelCase
-        int[] tablicaLiczba = {0, 1, 2, 3};
+        int[] zbiorLiczb = new int[4]; //Deklaracja tablicy typu int, która zawiera 4 elementy.
 
-        System.out.println( "Pierwszy element tablicy: " + tablicaLiczba[0] +
-                            "\nDrugi element tablicy: " + tablicaLiczba[1] +
-                            "\nTrzeci element tablicy: " + tablicaLiczba[2] +
-                            "\nCzwarty element tablicy: " + tablicaLiczba[3]);
-
+        zbiorLiczb[0] = 55; // dodajemy (inicjalizujemy) wartość w indeksie 0.
+        System.out.println( zbiorLiczb[0] ); //wypisujemy element 1 z tablicy o indeksie [0]
+        System.out.println( zbiorLiczb[1] ); //wypisujemy element 2 z tablicy o indeksie [1]
 
     }
 }
