@@ -8,8 +8,8 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.println("Podaj imię: ");
         String imie = scan.nextLine();
-
-        if(imie.equals("Ala")  || imie.equals("ala")) {
+        imie = imie.toLowerCase();
+        if(imie.equals("ala")) {
             System.out.println("Podane imię to Ala! ");
         }
 
