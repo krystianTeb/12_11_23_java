@@ -5,10 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Wprowadź liczbę[zatwierdź enter]: ");
-        Scanner scan = new Scanner(System.in);
-        int liczba = scan.nextInt();
-        System.out.println("Wprowadziłeś taką liczbę: " + liczba);
+       String imie = "Adam"; //1 sposób zapisu
+       String imie2 = new String("Adam"); //2 sposób zapisu
+       System.out.println(imie + " " + imie2);
 
 
 
