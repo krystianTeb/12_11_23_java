@@ -14,6 +14,7 @@ public class Main {
 
         for (int i = 0; i < tablica.length; i++){
             if(i % 2 == 0 && i != 0) tablica[i] = true;
+            else tablica[i] = false;
         }
 
         for(boolean element : tablica){
