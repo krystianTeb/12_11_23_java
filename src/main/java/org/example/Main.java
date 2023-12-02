@@ -13,7 +13,7 @@ public class Main {
         boolean[] tablica = new boolean[20];
 
         for (int i = 0; i < tablica.length; i++){
-            tablica[i] = i % 2 == 0 && i != 0 ? true : false;
+            tablica[i] = i % 2 == 0 && i != 0;
         }
 
         for(boolean element : tablica){
