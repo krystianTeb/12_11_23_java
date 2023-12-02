@@ -5,9 +5,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Ala" + " ma " + "kota");//z plusem jako operator konkatenacji (łączenia ciągów znaków)
-        System.out.println("Ala".concat(" ma ").concat("kota"));//z metodą concat
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj słowo: ");
+        String slowo = scan.next();
 
+        System.out.println("Podaj literę: ");
+        String litera = scan.next();
+        int index = slowo.indexOf(litera);
+        System.out.println(index != -1 ? "Litera: " + litera + " jest pod indexem: " + index :
+                                         "Litery " + litera + " nie ma w słowie!");
 
 
 
