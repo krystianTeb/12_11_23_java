@@ -6,14 +6,13 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Podaj słowo (mniejsze niż 10 znaków): ");
-        String slowo = scan.nextLine();
+        System.out.println("Podaj imię: ");
+        String imie = scan.nextLine();
 
-        if(slowo.length() < 10){
-            System.out.println("Brawo! Wprowadziłeś słowo krótsze niż 10 znaków! Słowo: " + slowo);
-        }else{
-            System.out.println("Źle! Wprowadziłeś słowo dłuższe lub równe 10 znaków! Słowo: " + slowo);
+        if(imie.equals("Ala")  || imie.equals("ala")) {
+            System.out.println("Podane imię to Ala! ");
         }
+
 
 
 
