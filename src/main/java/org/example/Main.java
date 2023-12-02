@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        /* Ćwiczenie 6
+        Utwórz 26-elementową tablicę typu char. Zapisz w kolejnych komórkach małe litery
+        alfabetu od a do z.
+         */
 
         // Utworzenie 26-elementowej tablicy typu char
         char[] alphabet = new char[26];
