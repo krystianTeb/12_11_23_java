@@ -7,9 +7,21 @@ public class Main {
 
         int[] zbiorLiczb = new int[4]; //Deklaracja tablicy typu int, która zawiera 4 elementy.
 
-        zbiorLiczb[0] = 55; // dodajemy (inicjalizujemy) wartość w indeksie 0.
-        System.out.println( zbiorLiczb[0] ); //wypisujemy element 1 z tablicy o indeksie [0]
-        System.out.println( zbiorLiczb[1] ); //wypisujemy element 2 z tablicy o indeksie [1]
+        //pętla dodająca do tablicy nowe wartości
+        for(int i = 0; i < zbiorLiczb.length; i++){
+            zbiorLiczb[i] = i;
+        }
+
+        // zbiorLiczb[0] = 0;
+        // zbiorLiczb[1] = 1;
+        // zbiorLiczb[2] = 2;
+        // zbiorLiczb[3] = 3;
+
+        //pętla foreach - wypisującą wszystko z tablicy
+        for(int element : zbiorLiczb){
+            System.out.println( element );
+        }
+
 
     }
 }
