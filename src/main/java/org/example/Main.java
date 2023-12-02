@@ -6,14 +6,14 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Podaj słowo: ");
-        String slowo = scan.next();
+        System.out.println("Podaj słowo (mniejsze niż 10 znaków): ");
+        String slowo = scan.nextLine();
 
-        System.out.println("Podaj literę: ");
-        String litera = scan.next();
-        int index = slowo.indexOf(litera);
-        System.out.println(index != -1 ? "Litera: " + litera + " jest pod indexem: " + index :
-                                         "Litery " + litera + " nie ma w słowie!");
+        if(slowo.length() < 10){
+            System.out.println("Brawo! Wprowadziłeś słowo krótsze niż 10 znaków! Słowo: " + slowo);
+        }else{
+            System.out.println("Źle! Wprowadziłeś słowo dłuższe lub równe 10 znaków! Słowo: " + slowo);
+        }
 
 
 
