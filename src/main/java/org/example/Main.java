@@ -5,20 +5,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        /*Ćwiczenie 2
-        Napisz program, w którym zostanie utworzona 10-elementowa tablica liczb typu int. Użyj pętli for do
-        wypełnienia jej danymi w taki sposób, aby w kolejnych komórkach znalazły się liczby od 10 do 100 (czyli 10,
-        20, 30 itd.). Zawartość tablicy wyświetl na ekranie.
+        /*  Ćwiczenie 3
+            Napisz program, w którym zostanie utworzona 20-elementowa tablica typu boolean. Komórkom o indeksie
+            parzystym przypisz wartość true, a o indeksie nieparzystym - false (zero możesz uznać za wartość parzystą).
+            Zawartość tablicy wyświetl na ekranie.
         */
-        int[] liczby = new int[10];
+        boolean[] tablica = new boolean[20];
 
-        int wartosc = 10;
-        for (int i = 0; i < liczby.length; i++){
-            liczby[i] = wartosc;
-            wartosc += 10;
+        for (int i = 0; i < tablica.length; i++){
+            if(i % 2 == 0 && i != 0) tablica[i] = true;
         }
 
-        for(int element : liczby){
+        for(boolean element : tablica){
             System.out.println(element);
         }
 
