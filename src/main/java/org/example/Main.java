@@ -9,6 +9,12 @@ public class Main {
        String imie2 = new String("Adam"); //2 sposób zapisu
        System.out.println(imie + " " + imie2);
 
+       int liczba = 5;
+       Integer liczba2 = 5;
+       System.out.println(liczba + " " + liczba2);
+
+
+
 
 
 
