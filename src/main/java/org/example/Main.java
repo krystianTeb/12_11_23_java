@@ -1,22 +1,39 @@
 package org.example;
 
 import java.lang.reflect.Array;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+     /*  Sposob 1
+     while(true) {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Podaj liczbę z przedziału od 1-6: ");
+            int podanaLiczba = scan.nextInt();
 
-        System.out.println( Math.floor( Math.random() * 10) );//generuje wartości od 0 - 9
-        System.out.println( Math.floor( Math.random() * 10) + 1 );//generuje wartości od 1 - 10
-        System.out.println( Math.ceil( Math.random() * 10) );//generuje wartości od 1 - 10
+            int wylosowanaLiczba = (int) Math.ceil(Math.random() * 6);
+            System.out.println(podanaLiczba == wylosowanaLiczba ?
+                    "Liczba jest trafiona! \nLiczba: " + podanaLiczba + "\nWylosowane: " + wylosowanaLiczba :
+                    "Liczba NIE jest trafiona! \nLiczba: " + podanaLiczba + "\nWylosowane: " + wylosowanaLiczba);
+        }*/
 
-        //Zapisanie jako int
-        System.out.println( (int)Math.floor( Math.random() * 10) );//generuje wartości od 0 - 9
-        System.out.println( (int)Math.floor( Math.random() * 10) + 1 );//generuje wartości od 1 - 10
-        System.out.println( (int)Math.ceil( Math.random() * 10) );//generuje wartości od 1 - 10
+        /* Sposob 2 */
+
+        while(true) {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Podaj liczbę z przedziału od 1-6: ");
+            int podanaLiczba = scan.nextInt();
+
+            Random rand = new Random();
+            //int wylosowanaLiczba = rand.nextInt(5); // generuje wartości: 0-5
+            int wylosowanaLiczba = rand.nextInt(5) + 1; // generuje wartości: 1-6
+
+            System.out.println(podanaLiczba == wylosowanaLiczba ?
+                    "Liczba jest trafiona! \nLiczba: " + podanaLiczba + "\nWylosowane: " + wylosowanaLiczba :
+                    "Liczba NIE jest trafiona! \nLiczba: " + podanaLiczba + "\nWylosowane: " + wylosowanaLiczba);
+        }
+
+
 
     }
 
