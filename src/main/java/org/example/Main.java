@@ -8,16 +8,20 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
+        int[] wartosciPobrane = pobierzLiczbeOdUzytkownika(5);
 
-        int wynikPotegowania = (int)Math.pow(2, 2);//konwersja double na int (stabdardowo metoda pow zwraca double)
-        double wynikPotegowania2 = Math.pow(2, 2);
-        System.out.println(wynikPotegowania);
-        System.out.println(wynikPotegowania2);
-
-        System.out.println(Math.ceil(4.1));//5.0 jako double
-        System.out.println((int)Math.ceil(4.1));//5 jako int
-
-
+        for(int w : wartosciPobrane){
+            System.out.println(w);
+        }
+    }
+    static int[] pobierzLiczbeOdUzytkownika(int ilePobrac){
+        Scanner scan = new Scanner(System.in);
+        int[] pobraneWartosci = new int[ilePobrac];
+        for(int i = 0; i < pobraneWartosci.length; i++){
+            System.out.println("Podaj liczbę " + (i + 1));
+            pobraneWartosci[i] = scan.nextInt();
+        }
+        return pobraneWartosci;
     }
 
 }
