@@ -26,7 +26,8 @@ public class Main {
 
             Random rand = new Random();
             //int wylosowanaLiczba = rand.nextInt(5); // generuje wartości: 0-5
-            int wylosowanaLiczba = rand.nextInt(5) + 1; // generuje wartości: 1-6
+            //int wylosowanaLiczba = rand.nextInt(5) + 1; // generuje wartości: 1-6
+            int wylosowanaLiczba = rand.nextInt(1, 7); // generuje wartości: 1-6
 
             System.out.println(podanaLiczba == wylosowanaLiczba ?
                     "Liczba jest trafiona! \nLiczba: " + podanaLiczba + "\nWylosowane: " + wylosowanaLiczba :
