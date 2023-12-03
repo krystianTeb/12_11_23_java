@@ -8,20 +8,19 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        int[] wartosciPobrane = pobierzLiczbeOdUzytkownika(5);
+        int liczba1, liczba2, liczba3;
 
-        for(int w : wartosciPobrane){
-            System.out.println(w);
-        }
+        System.out.println("Podaj liczbę 1: ");
+        liczba1 = pobierzLiczbeOdUzytkownika();
+        System.out.println("Podaj liczbę 2: ");
+        liczba2 = pobierzLiczbeOdUzytkownika();
+        System.out.println(liczba1 + " " + liczba2);
+
+        System.out.println("Wartość max: " + Math.max(liczba1, liczba2));
+        System.out.println("Wartość min: " + Math.min(liczba1, liczba2));
     }
-    static int[] pobierzLiczbeOdUzytkownika(int ilePobrac){
+    static int pobierzLiczbeOdUzytkownika(){
         Scanner scan = new Scanner(System.in);
-        int[] pobraneWartosci = new int[ilePobrac];
-        for(int i = 0; i < pobraneWartosci.length; i++){
-            System.out.println("Podaj liczbę " + (i + 1));
-            pobraneWartosci[i] = scan.nextInt();
-        }
-        return pobraneWartosci;
+        return scan.nextInt();
     }
-
 }
