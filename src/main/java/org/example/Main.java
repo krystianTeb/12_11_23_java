@@ -9,26 +9,15 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
 
-/*        Scanner scan = new Scanner(System.in);
-        System.out.println("Podaj słowo: ");
-        String zdanie = scan.nextLine();*/
+        int wynikPotegowania = (int)Math.pow(2, 2);//konwersja double na int (stabdardowo metoda pow zwraca double)
+        double wynikPotegowania2 = Math.pow(2, 2);
+        System.out.println(wynikPotegowania);
+        System.out.println(wynikPotegowania2);
 
-
-        //Jak zmodyfikować pierwszą literę aby była wielka:
-        String testoweSlowo = "test";
-        System.out.println(Character.toUpperCase(testoweSlowo.charAt(0)) + testoweSlowo.substring(1));
-
-        //Palindrom:
-        String str = "Augusta".toLowerCase();
-        for (int i = 0; i < str.length() / 2; i++) {
-            if (str.charAt(i) != str.charAt(str.length() - i - 1)) {
-                System.out.println("Słowo nie jest palindromem!"); // Jeśli litery nie są sobie równe, to słowo nie jest palindromem
-                break;
-            }
-        }
-
-
+        System.out.println(Math.ceil(4.1));//5.0 jako double
+        System.out.println((int)Math.ceil(4.1));//5 jako int
 
 
     }
+
 }
