@@ -9,11 +9,11 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
 
-        Powitanie();
-        Powitanie();
-        Powitanie();
+        System.out.println( Dodawanie(2, 2) );
+        System.out.println( Dodawanie(5, 2) );
+        System.out.println( Dodawanie(5, 5) );
     }
-    static void Powitanie(){
-       System.out.println("Cześćć :)");
+    static int Dodawanie(int liczba1, int liczba2){
+        return liczba1 + liczba2;
     }
 }
